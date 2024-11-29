@@ -1,9 +1,10 @@
-import React from 'react'
 import logo from '../assets/image1.png'; 
 import main from '../assets/image.png'; 
+import styled from 'styled-components';
 
 const Landing = () => {
-  return( <main>
+  return( 
+  <Wrapper>
     <nav>
     <img src={logo} alt='JOBIFY' classname='logo'/>
     </nav>
@@ -17,11 +18,12 @@ const Landing = () => {
         <img src={main} alt="job hunt" classname="img main-img"/>
     </dev>
 
-    </main>
+    </Wrapper>
   )
 }
 
 export default Landing
+
 
 
 
