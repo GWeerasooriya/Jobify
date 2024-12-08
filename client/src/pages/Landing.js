@@ -1,12 +1,14 @@
-import logo from '../assets/image1.png';    
+  
 import main from '../assets/image.png'; 
+
 import Wrapper from '../Wrapper/Testing'
+import {Logo} from '../components';
 
 const Landing = () => {
   return( 
   <Wrapper>
     <nav>
-    <img src={logo} alt='JOBIFY' classname='logo'/>
+      <Logo/>
     </nav>
     <dev classname="container page">
         <dev classname="info">
