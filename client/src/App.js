@@ -1,21 +1,21 @@
-import Landing from "./pages/Landing";
-import styled from 'styled-components';
 
-const Button = styled.button`
-  background:red;
-  color: white;
-  font-size:1rem;
-`
-
+import{BrowserRouter,Routes,Route,Link} from 'react-router-dom'
+import {Dashbord, Landing, Error,Register} from './pages'
 function App() {
   return (
-    <div>
-      <Button>Click Me</Button>
-    <h1>JOBIFY</h1>
-    <Landing/>
+    <BrowserRouter>
+   
+    <Routes>
+      <Route path="/" element={<Dashbord/>}/>
+      <Route path="/register" element={<Register/>}/>
+      <Route path="/landing" element={<Landing/>}/>
+      <Route path="*" element={<Error/>}/>
+    </Routes>
+    
 
-    </div>
+    </BrowserRouter>
   )
 }
 
 export default App;
+  
