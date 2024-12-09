@@ -1,6 +1,6 @@
   
 import main from '../assets/image.png'; 
-
+import { Link } from 'react-router-dom';
 import Wrapper from '../Wrapper/Testing'
 import {Logo} from '../components';
 
@@ -16,7 +16,7 @@ const Landing = () => {
 
             <p>I'm baby wayfarers hoodie next level taiyaki brooklyn cliche blue bottle single-origin coffee chia. 
                 Aesthetic post-ironic venmo, quinoa lo-fi tote bag adaptogen everyday carry meggings +1 brunch narwhal.</p>
-         <button classname="btn btn-hero">Login/Register</button>
+         <Link to='/register' classname="btn btn-hero">Login/Register</Link>
         </dev>
         <img src={main} alt="job hunt" classname="img main-img"/>
     </dev>
