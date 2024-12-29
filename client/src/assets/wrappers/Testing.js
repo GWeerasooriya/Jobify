@@ -17,8 +17,8 @@ nav{
 }
 h1{
     font-weight: 700;
-    spsn{
-        color: var(--clr-primary-5);
+    span{
+        color: var(--primary-500);
     }
 }
 p{
