@@ -1,7 +1,14 @@
+import Landing from "./pages/Landing";
 
 function App() {
   return (
-    <div>JOBIFY</div>
+    <div>
+      
+      <h1>JOBIFY</h1>
+      <Landing />
+
+    </div>
+    
     
   );
 }
