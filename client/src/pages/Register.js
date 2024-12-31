@@ -49,13 +49,6 @@ const Register = () => {
         value={values.passowrd} 
         handlechange={handlechange} 
         />
-
-<FormRow 
-        type="passowrd" 
-        name="passowrd" 
-        value={values.passowrd} 
-        handlechange={handlechange} 
-        />
            
         <button type="submit" className="btn btn-block">submit</button>
         </form>
