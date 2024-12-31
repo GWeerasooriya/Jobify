@@ -1,13 +1,19 @@
-import Landing from "./pages/Landing";
 
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import {Dashbord, Landing, Register, Error } from './pages'
 
 function App() {
   return (
-    <div>
-      
-      <Landing />
+    <BrowserRouter>
+    
+      <Routes>
+        <Route path='/' element = {<Dashbord />}/>
+        <Route path='/register' element = {<Register />}/>
+        <Route path='/landing' element = {<Landing />}/>
+        <Route path='*' element = {<Error />}/>
+      </Routes>
 
-    </div>
+    </BrowserRouter>
     
     
   );
